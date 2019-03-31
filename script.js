@@ -31,6 +31,10 @@ var MovieTitle = React.createClass({
         return (
             React.createElement('h2', {}, this.props.movie.title)
         );
+    },
+
+    propTypes: {
+        movie: React.PropTypes.object.isRequired,
     }
 });
 
@@ -39,6 +43,10 @@ var MovieDesc = React.createClass({
         return (
             React.createElement('p', {}, this.props.movie.desc)
         );
+    },
+
+    propTypes: {
+        movie: React.PropTypes.object.isRequired,
     }
 });
 
